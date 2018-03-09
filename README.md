@@ -1,5 +1,5 @@
 # Toy Robot Program
-
+https://github.com/mokhlisse/toy-robot/issues
 Spring Boot Application to resole a toy robot problem.
 
 ## What you will need ?
@@ -13,8 +13,18 @@ with Bash
 
     mvn package && java -jar target/toy-robot-0.0.1.jar
 
-Then open a Postman window and enjoy Posting commands to http://localhost:8080/
+then open a Postman window and enjoy Posting commands to http://localhost:8080/
 
+command example:
+```
+PLACE 0,0,NORTH
+MOVE
+REPORT
+```
+expected result:
+```
+Output: 0,1,NORTH
+```
 
 ## Source Code organization
 ```
@@ -57,6 +67,7 @@ toy-robot/src$ find . | sort | sed '1d;s,[^/]*/,|    ,g;s/..//;s/[^ ]*$/|-- &/'
 $ mvn test
 ... [INFO] Scanning for projects...
 ```
+Please Find some sample test files in under src/test/resources/
 
 ## License
 
